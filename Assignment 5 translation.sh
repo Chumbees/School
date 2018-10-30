@@ -1,10 +1,10 @@
-DATA_DIR=data
+DATA_DIR=Shakespear
 MODEL_DIR=models
 rm -Rf $MODEL_DIR
 mkdir -p $MODEL_DIR
 python3 -m sockeye.train\
-                       --source $DATA_DIR/shakespeare/sparknotes/merged/antony-and-cleopatra_modern.snt.aligned \
-                       --target $DATA_DIR/shakespeare/sparknotes/merged/antony-and-cleopatra_original.snt.aligned \
+                       --source $DATA_DIR/antony-and-cleopatra_modern.snt.aligned \
+                       --target $DATA_DIR/antony-and-cleopatra_original.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
                        --rnn-num-hidden 2 \

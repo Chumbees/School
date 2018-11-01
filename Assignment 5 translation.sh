@@ -11,5 +11,7 @@ python3 -m sockeye.train\
                        --validation-source $DATA_DIR/Test_Modern/Modern_test_combined.snt.aligned \
                        --validation-target $DATA_DIR/Test_Original/Original_test_combined.snt.aligned \
                        --output $MODEL_DIR \
-                       --decode-and-evaluate 500
-                       --batch-size 100
+                       --decode-and-evaluate 500 \
+                       --batch-size 100 \
+                       --batch-type word \
+                       --learning-rate .005

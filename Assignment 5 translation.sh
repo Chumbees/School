@@ -14,4 +14,4 @@ python3 -m sockeye.train\
                        --decode-and-evaluate 500 \
                        --batch-size 100 \
                        --batch-type word \
-                       --learning-rate .005
+                       --initial-learning-rate .005

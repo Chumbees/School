@@ -7,11 +7,13 @@ python3 -m sockeye.train\
                        --target $DATA_DIR/original_train.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
-                       --cnn-num-hidden 1 \
+                       --rnn-num-hidden 512 \
+                       --rnn-attention-type dot \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \
                        --validation-target $DATA_DIR/original_validation.snt.aligned \
                        --output $MODEL_DIR \
                        --decode-and-evaluate 500 \
                        --batch-size 200 \
                        --batch-type word \
-                       --initial-learning-rate .0003
+                       --initial-learning-rate .003 \
+                       --learning-rate-scheduler-type plateau-reduce \

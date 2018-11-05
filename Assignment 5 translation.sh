@@ -7,7 +7,7 @@ python3 -m sockeye.train\
                        --target $DATA_DIR/original_train.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
-                       --rnn-num-hidden 2 \
+                       --cnn-num-hidden 1 \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \
                        --validation-target $DATA_DIR/original_validation.snt.aligned \
                        --output $MODEL_DIR \

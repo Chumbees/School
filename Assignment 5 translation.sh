@@ -15,5 +15,4 @@ python3 -m sockeye.train\
                        --decode-and-evaluate 500 \
                        --batch-size 200 \
                        --batch-type word \
-                       --initial-learning-rate .003 \
-                       --learning-rate-scheduler-type plateau-reduce \
+                       --initial-learning-rate .003 

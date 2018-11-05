@@ -8,11 +8,10 @@ python3 -m sockeye.train\
                        --encoder cnn \
                        --decoder cnn \
                        --rnn-num-hidden 2 \
-                       --rnn-attention-type dot \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \
                        --validation-target $DATA_DIR/original_validation.snt.aligned \
                        --output $MODEL_DIR \
                        --decode-and-evaluate 500 \
                        --batch-size 200 \
                        --batch-type word \
-                       --initial-learning-rate .003 
+                       --initial-learning-rate .0003

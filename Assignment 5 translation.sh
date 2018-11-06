@@ -7,7 +7,7 @@ python3 -m sockeye.train\
                        --target $DATA_DIR/original_train.snt.aligned \
                        --encoder cnn \
                        --decoder cnn \
-                       --cnn-activation-type-relu \
+                       --cnn-activation-type relu \
                        --cnn-num-hidden 512 \
                        --cnn-hidden-dropout .05 \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \

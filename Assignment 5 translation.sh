@@ -12,6 +12,7 @@ python3 -m sockeye.train\
                        --rnn-num-hidden 512 \
                        --rnn-attention-type bilinear \
                        --optimizer adam \
+                       --max-num-epochs 400 \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \
                        --validation-target $DATA_DIR/original_validation.snt.aligned \
                        --output $MODEL_DIR \

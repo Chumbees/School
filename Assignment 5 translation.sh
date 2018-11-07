@@ -9,11 +9,10 @@ python3 -m sockeye.train\
                        --decoder cnn \
                        --cnn-activation-type relu \
                        --cnn-hidden-dropout .05 \
-                       --rnn-num-hidden 512
-                       --rnn-attention-type bilinear
-                       --optimizer adam
+                       --rnn-num-hidden 512 \
+                       --rnn-attention-type bilinear \
+                       --optimizer adam \
                        --validation-source $DATA_DIR/modern_validation.snt.aligned \
                        --validation-target $DATA_DIR/original_validation.snt.aligned \
                        --output $MODEL_DIR \
                        --decode-and-evaluate 500 \
-                       --initial-learning-rate .0003
